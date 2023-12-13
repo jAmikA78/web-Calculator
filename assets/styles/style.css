@@ -87,6 +87,13 @@ input {
     background-color: #f4b6eb75;
 }
 
+.almost_basic_operator{
+    flex: 1;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #e84dd175;
+}
+
 .main_operator{
     flex: 1;
     margin: 5px;

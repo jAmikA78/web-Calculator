@@ -13,59 +13,65 @@
     <h1>Math Calculator</h1>
     <div class="calculator">
         <div class="cc">
-        <input type="text" id="operation" disabled>
-        <div class="row">
-            <button class="main_operator" onclick="clearOperation()">clear</button>
-            <button class="main_operator" onclick="back()">back</button>
-        </div>
-        <div class="row">
-            <button class="number" onclick="display('1')">1</button>
-            <button class="number" onclick="display('2')">2</button>
-            <button class="number" onclick="display('3')">3</button>
-            <button class="basic_operator" onclick="display('*')">*</button>
-            <button class="operator" onclick="display('gcd(')">gcd( </button>
+            <input type="text" id="operation" disabled>
+            <div class="row">
+                <button class="main_operator" onclick="clearOperation()">clear</button>
+                <button class="main_operator" onclick="back()">back</button>
+            </div>
+            <div class="row">
+                <button class="number" onclick="display('1')">1</button>
+                <button class="number" onclick="display('2')">2</button>
+                <button class="number" onclick="display('3')">3</button>
+                <button class="basic_operator" onclick="display('*')">*</button>
+                <button class="almost_basic_operator" onclick="display('%')">%</button>
+                <button class="operator" onclick="display('gcd(')">gcd( </button>
 
-        </div>
-        <div class="row">
-            <button class="number" onclick="display('4')">4</button>
-            <button class="number" onclick="display('5')">5</button>
-            <button class="number" onclick="display('6')">6</button>
-            <button class="basic_operator" onclick="display('/')">/</button>
-            <button class="operator" onclick="display('lcm(')">lcm( </button>
+            </div>
+            <div class="row">
+                <button class="number" onclick="display('4')">4</button>
+                <button class="number" onclick="display('5')">5</button>
+                <button class="number" onclick="display('6')">6</button>
+                <button class="basic_operator" onclick="display('/')">/</button>
+                <button class="almost_basic_operator" onclick="display('&')">&</button>
+                <button class="operator" onclick="display('lcm(')">lcm( </button>
 
+            </div>
+            <div class="row">
+                <button class="number" onclick="display('7')">7</button>
+                <button class="number" onclick="display('8')">8</button>
+                <button class="number" onclick="display('9')">9</button>
+                <button class="basic_operator" onclick="display('-')">-</button>
+                <button class="almost_basic_operator" onclick="display('|')">|</button>
+                <button class="operator" onclick="display('sin(')">sin(</button>
+            </div>
+            <div class="row">
+                <button class="number" onclick="display('0')">0</button>
+                <button class="number" onclick="display('00')">00</button>
+                <button class="nither" onclick="display('.')">.</button>
+                <button class="basic_operator" onclick="display('+')">+</button>
+                <button class="almost_basic_operator" onclick="display('~')">~</button>
+                <button class="operator" onclick="display('cos(')">cos(</button>
+            </div>
+            <div class="row">
+                <button class="operator" onclick="display('log2(')">log2(</button>
+                <button class="operator" onclick="display('log(')">log(</button>
+                <button class="operator" onclick="display('logn(')">logn(</button>
+                <button class="operator" onclick="display('pow(')">pow(</button>
+                <button class="almost_basic_operator" onclick="display('^')">^</button>
+                <button class="operator" onclick="display('tan(')">tan(</button>
+            </div>
+            <div class="row">
+                <button class="operator" onclick="display('SRoot(')">SRoot( </button>
+                <button class="operator" onclick="display('CRoot(')">CRoot( </button>
+                <button class="operator" onclick="display('root(')">root(</button>
+                <button class="nither" onclick="display(',')">,</button>
+                <button class="almost_basic_operator" onclick="display('<->(')"><->(</button>
+                <button class="nither" onclick="display(')')">)</button>
+            </div>
+            <div class="row">
+                <button class="main_operator" onclick="equality()">=</button>
+            </div>
         </div>
-        <div class="row">
-            <button class="number" onclick="display('7')">7</button>
-            <button class="number" onclick="display('8')">8</button>
-            <button class="number" onclick="display('9')">9</button>
-            <button class="basic_operator" onclick="display('-')">-</button>
-            <button class="operator" onclick="display('sin(')">sin(</button>
-        </div>
-        <div class="row">
-            <button class="number" onclick="display('0')">0</button>
-            <button class="number" onclick="display('00')">00</button>
-            <button class="nither" onclick="display('.')">.</button>
-            <button class="basic_operator" onclick="display('+')">+</button>
-            <button class="operator" onclick="display('cos(')">cos(</button>
-        </div>
-        <div class="row">
-            <button class="operator" onclick="display('log2(')">log2(</button>
-            <button class="operator" onclick="display('log(')">log(</button>
-            <button class="operator" onclick="display('logn(')">logn(</button>
-            <button class="operator" onclick="display('pow(')">pow(</button>
-            <button class="operator" onclick="display('tan(')">tan(</button>
-        </div>
-        <div class="row">
-            <button class="operator" onclick="display('SRoot(')">SRoot( </button>
-            <button class="operator" onclick="display('CRoot(')">CRoot( </button>
-            <button class="operator" onclick="display('root(')">root(</button>
-            <button class="nither" onclick="display(',')">,</button>
-            <button class="nither" onclick="display(')')">)</button>
-        </div>
-        <div class="row">
-            <button class="main_operator" onclick="equality()">=</button>
-        </div>
-    </div>
     </div>
 
     <script src="assets/scripts/script.js"></script>
