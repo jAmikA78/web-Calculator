@@ -21,7 +21,7 @@ function lcm(a, b) {
     return (a * b) / gcd(a, b);
 }
 
-function root(base, n) {
+function root(n, base) {
     return base ** (1 / n);
 }
 
@@ -36,14 +36,6 @@ function logn(base, x) {
     return Math.log(x) / Math.log(base);
 }
 
-function log(n) {
-    return logn(n, 10);
-}
-
-function log2(n) {
-    return logn(n, 2);
-}
-
 function xnor(a, b) {
     return ~(a ^ b);
 }
@@ -51,6 +43,8 @@ function xnor(a, b) {
 function equality() {
     let expression = operation.value;
     expression = expression.replace(/pow\(/g, 'Math.pow(');
+    expression = expression.replace(/log2\(/g, 'Math.log2(');
+    expression = expression.replace(/ln\(/g, 'Math.log(');
     expression = expression.replace(/<->\(/g, 'xnor(');
     expression = expression.replace(/sin\(/g, 'Math.sin(');
     expression = expression.replace(/cos\(/g, 'Math.cos(');
